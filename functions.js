@@ -26,7 +26,7 @@ var b = 6;
 function add(num1, num2){
 	return num1 + num2;
 }
-var sum = add(a, b);
+var sum = add(24, 23);
 // console.log(sum);
 
 /**
