@@ -23,12 +23,12 @@ var b = 6;
  *  This function returns the result of adding `a` and `b` together.
  *  Store this value in a variable named `sum`.
  */
-function add(num1, num2){
-	return num1 + num2;
+function add(){
+	return a + b;
 }
-var sum = add(24, 23);
+var sum = add();
 // console.log(sum);
-
+ 
 /**
  *  #3
  *  Function - subtract
@@ -37,10 +37,10 @@ var sum = add(24, 23);
  *  Store this value in a variable named `difference`
  */
 
-function subtract(a, b){
-	return b - a;
+function subtract(){
+	return a - b;
 }
-var difference = subtract(a, b);
+var difference = subtract();
 // console.log(difference)
 
 
@@ -51,10 +51,10 @@ var difference = subtract(a, b);
  *  This function returns the result of multiplying `b` by `a`.
  *  Store this value in a variable named `product`
  */
-function multiply(a, b){
+function multiply(){
 	return b * a;
 }
-var product = multiply(a, b)
+var product = multiply()
 // console.log(product)
 
 /**
@@ -68,8 +68,11 @@ var product = multiply(a, b)
  */
 
 
-
-
+function checkDifference(X){
+	return "My footbal team lost " + X + " times this week";
+}
+checkDifference(difference);
+// console.log(football);
 /**
  *  #6
  *  Function - checkSum
