@@ -268,7 +268,12 @@ console.log(hufflepuff);
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
 
-function repeater(){
-	return ""
+function repeater(X){
+	if (canDrinkBeer){
+		return "Bacon Pancakes, makin' Bacon Pancakes...";
+	}else{
+		return "Let it go.... LET IT GOOOOOOoOoOoOo...";
+	}
 }
-
+var howMany = repeater();
+console.log(howMany);
