@@ -189,6 +189,15 @@ console.log(myFullName);
  *  Store the return value to a variable named** `canDrinkBeer`
  */
 
+ function verifyDrinkingAge(age){
+ 	if (age<21){
+ 		return false;
+ 	}else{
+ 		return true;
+ 	}
+ }
+var legal = verifyDrinkingAge(21)
+console.log(legal);
 
 /**
  *  #12
