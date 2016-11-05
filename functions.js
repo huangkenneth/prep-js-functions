@@ -27,7 +27,7 @@ function add(){
 	return a + b;
 }
 var sum = add();
-// console.log(sum);
+// consol.log(sum);
  
 /**
  *  #3
@@ -82,7 +82,10 @@ checkDifference(difference);
  *  "I CAN ADDZ X NUMBERS"  where `X` is the value
  *  stored in the variable `sum`.
  */
-
+function checkSum(X){
+	return "I CAN ADDZ " + X + " NUMBERS";
+}
+checkSum(sum); // 8
 
 /**
  *  #7
@@ -92,6 +95,17 @@ checkDifference(difference);
  *  multiplies it by the number stored at `difference` and
  *  then prints the result to the console.
  */
+
+// function checkProduct(){
+// 	// console.log(Product * difference);
+// }
+// checkProduct();
+
+// function checkProduct(P, D){
+// 	return P * D;
+// }
+// var num7 = checkProduct(product, difference);
+// console.log(num7)
 
 
 /**
@@ -109,6 +123,19 @@ checkDifference(difference);
  */
 
 
+
+function addThenSubtract(sum, difference, product){
+	return subtract(sum, add(difference, product));
+
+	// var first = add(sum, difference); // some number
+	// var second = subtract(first, product); // first - num3
+	// return second;
+}
+var test = addThenSubtract(sum, difference, product);
+console.log(test);
+
+
+
 /**
  *  #9
  *  Function - addThenMultiply
@@ -121,6 +148,11 @@ checkDifference(difference);
  *  Store the return of this function to a variable named `howMany`
  */
 
+function addThenMultiply(num1, num2, num3){
+	return add(num1, num2)*num3
+}
+var test2 = addThenMultiply(sum, difference, product);
+console.log(test2);
 
 /**
  *  #10
@@ -136,7 +168,11 @@ checkDifference(difference);
  * Call this function and pass your first and last name into it.
  * Store the return value to a variable named `myFullName`
  */
-
+function createFullName(firstName, lastName){
+	return firstName + " " + lastName;
+}
+var myFullName = createFullName("Kenneth", "Huang");
+console.log(myFullName);
 
 /**
  *  #11
