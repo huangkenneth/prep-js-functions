@@ -192,12 +192,14 @@ console.log(myFullName);
  function verifyDrinkingAge(age){
  	if (age<21){
  		return false;
+ 	}else if (age===21){
+ 		return "Party";
  	}else{
  		return true;
  	}
  }
-var legal = verifyDrinkingAge(21)
-console.log(legal);
+var canDrinkBeer = verifyDrinkingAge(20)
+console.log(canDrinkBeer);
 
 /**
  *  #12
@@ -208,6 +210,16 @@ console.log(legal);
  *  "The Party will have tons of Cake!" otherwise this message
  *  should be "This Party will have an open bar".
  */
+
+function throwParty(){
+	if (canDrinkBeer===false){
+		return "The Party will have tons of Cake!";
+	}else{
+		return "This Party will have an open bar";
+	}
+}
+var kidsEatCake = throwParty();
+console.log(kidsEatCake);
 
 
 /**
@@ -230,6 +242,19 @@ console.log(legal);
  *      "Peter Bojanglesloves loves to eat California Burritos"
  */
 
+// function eatFood(firstName, lastName, food){
+// 	var name = createFullName(firstName, lastName);
+// 	return name  + " likes to eat " + food + ".";
+
+// function eatFood(firstName, lastName, food){
+// 	var name = createFullName(firstName, lastName) + " likes to eat " + food + ".";
+// 	return name;
+
+function eatFood(firstName, lastName, food){
+	return createFullName(firstName, lastName) + " likes to eat " + food + ".";
+}
+var hufflepuff = eatFood("Kenneth", "Huang", "pizza");
+console.log(hufflepuff);
 
 /**
  *  #14
@@ -242,4 +267,8 @@ console.log(legal);
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
+
+function repeater(){
+	return ""
+}
 
